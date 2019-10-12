@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SIMS</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head
+         content must come *after* these tags -->
+     <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!--  <script src="js/jquery.min(1).js"></script>-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/javascript.js"></script>
+    <link href="style.css" rel="stylesheet">
+  <style>
+  body{
+    font-family: "Times New Roman", Times, serif;
+  }
+  .jumbotron{
+    position: relative;
+    height: 100vh;
+    background-image: url(image/Home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .down{
+    margin: 10vh 0 0 0;
+  }
+  .down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+.down {
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.down:before {
+    border-width: 0px 0 2px 2px;
+}
+.down:hover{
+  cursor: pointer;
+}
+.modal.modal-wide .modal-dialog {
+  width: 70%;
+}
+.modal-wide .modal-body {
+  overflow-y:auto;
+}
+figure{
+  display: inline-block;
+}
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+  </style>
+
+</head>
+<body>
+  <div id="coverhead">
+	<div class="jumbotron">
+		<center>
+		<div style="font-family: Times New Roman, Times, serif; font-size: 150px">
+			<font style="color: Blue;">S</font><font style="color: White;">IMS</font>
+		</div>
+    <div class="down">
+      <span class="glyphicon glyphicon-menu-down" style="font-size: 100px; color: white;"></span>
+    </div>
+		</center>
+	</div>
+</div>
+  <nav class="nav navbar-default navbar-inverse" role="navigation" style="background: #4169e1">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only"> Toggle navigation </span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <font style="color: Blue; font-size:35px;">S</font><font style="color: White; font-size:35px;">IMS</font>
+        </a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+        <li> <a data-toggle="modal" href="#myModal"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>Login</a></li>
+        <li> <a href="#"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About</a></li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  <div class="modal modal-wide fade" width=90% id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <center>
+          <figure><a href="admin/login.php"><img src="image/admin.png" height="200px" width="200px" /><figcaption>Admin Login</figcaption></a></figure>
+          <figure><a href="faculty/login.php"><img src="image/teacher.png" height="200px" width="200px" /><figcaption>Faculty Login</figcaption></a></figure>
+          <figure><a href="students/login.php"><img src="image/student.png" height="200px" width="200px" /><figcaption>Student Login</figcaption></a></figure>
+        </center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container container-fluid" style="height: 100vh">
+      <div class="row row-container">
+        <div class="col-xs-12">
+          <center><p style="font-size: 25px;"><b>Remember that why we work</b></p></center>
+        </div>
+      </div>
+      <div class="row row-container">
+        <div class="col-xs-12 col-sm-8" style="font-size: 20px; text-align: justify;">
+          <p>
+            The system is at the center focus having all the modules such as
+            student, faculty, marks and administration. The student can access
+            the information such as its details, marks. The faculty can view the
+             student details and also the faculty has the right to update the
+             details of student. The faculty can also update the Marks module.
+           </p>
+           <p>
+             The design and implementation of a comprehensive student
+             information system and user interface is to replace the current
+             paper records. College staff are able to directly access all
+             aspects of a student's academic progress through a sercure,
+             online interface embedded in the college website. All data is
+             thorughtly reviewed and validated on the server before actual
+             record alteration occurs. The system provides a simple interface
+             for the maintenance of student information. Achieving this objective
+              is difficult using a manual system as the information is
+              scattered, can be redundant and collecting relevant
+              information may be very time consuming
+          </p>
+        </div>
+          <div class="col-xs-12 col-sm-4" style="color:rgb(0, 176, 240); font-size:20px">
+                -Every user should have their own identity.
+                <br>
+                <br>
+                -Login facility.
+                <br>
+                <br>
+                -User can update his / her personal information and can view
+                the notice, results, placement and exam secition updates etc.
+                <br>
+                <br>
+                -Faculty, placement and exam sections can update any of the information.
+          </div>
+      </div>
+  </div>
+</body>
+</html>
